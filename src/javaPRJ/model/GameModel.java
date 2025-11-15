@@ -1,4 +1,4 @@
-package java.model;
+package javaPRJ.model;
 
 public class GameModel {
     public static final String PLAYER_X = "X";
@@ -80,11 +80,11 @@ public class GameModel {
     public boolean checkDraw(){
         for (int i = 0; i < board.length; i++){
             for (int j = 0; j < board[i].length; j++){
-                if (!board[i][j].equals(EMPTY)){
-                    return true;
+                if (board[i][j].equals(EMPTY)){
+                    return false;
                 }
             }
         }
-        return false;
+        return true;
     }
 }
