@@ -4,7 +4,7 @@ public class GameModel {
     public static final String PLAYER_X = "X";
     public static final String PLAYER_O = "O";
     public static final String EMPTY = "";
-    private static String currentPlayer;
+    private String currentPlayer;
     private String[][] board;
     private boolean gameOver;
     private int xWins;
